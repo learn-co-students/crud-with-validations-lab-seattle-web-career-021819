@@ -1,0 +1,20 @@
+<h1>This is the index view.</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Artist</th>
+    <th>Genre</th>
+    <th>Released?</th>
+    <th>Release Year</th>
+  </tr>
+  <% @songs.each do |song| %>
+    <tr>
+      <td><%= song.title %></td>
+      <td><%= song.artist_name %></td>
+      <td><%= song.genre %></td>
+      <td><%= song.released %></td>
+      <td><%= song.release_year %></td>
+    </tr>
+  <% end %>
+</table>
